@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Oldage Homes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styler.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https:/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+</head>
+
+<body class="bg-yellow-50">
+
+
+  <div class="flex-col">
+
+    <div id="map" class="h-[80vh] w-[100vh] m-auto mt-12"></div>
+
+
+    <div class="m-12">
+
+      <table class="tables center">
+        <tr>
+          <th>ORGANIZATION’S NAME </th>
+          <th>ADDRESS </th>
+          <th>CONTACT NO.</th>
+        </tr>
+        <tr>
+          <td>PET HOME AFFAIRS DAY BOARDING </td>
+          <td>SECTOR 74 , NOIDA – 201304 (NEAR PRATEEK WISTERIA ) </td>
+          <td>7947219857 , 9873204636 </td>
+        </tr>
+        <tr>
+          <td>WIGGLY TAILS </td>
+          <td>OFFICE NO. M12 , SAKET , DELHI -110017 (SHERATON HOTEL ) </td>
+          <td>7947239054 </td>
+        </tr>
+        <tr>
+          <td>MARSHEL DOG DAY CARE </td>
+          <td>D – 234 , MAHAVIR ENCLAVE PART 3 , GALI NO. – 54 , 60 FEET ROAD , MAHAVIR ENCLAVE 3 , DELHI 110045 (NEAR
+            BINDAPUR DDA FLAT) </td>
+          <td>7947224140 </td>
+        </tr>
+        <tr>
+          <td>ROSHRE ROYAL KENNEL </td>
+          <td>JAYPEE AMAN , GREATER NOIDA, NOIDA – 201310 (JAYPEE GREENS GOLFS AND SPA RESORT ) </td>
+          <td>7947333868 </td>
+        </tr>
+        <tr>
+          <td>HAPPY DOG CLUB </td>
+          <td>8A/377 DDA JANTA FLAT , MAYUR KUNJ , TRILOK PURI , DELHI – 110091 ( NEAR GENERATOR WALE ) </td>
+          <td>8045786143 </td>
+        </tr>
+        <tr>
+          <td>CROYCHING PUPPY HIDDEN KITTY </td>
+          <td>SHOP NO. 4 , GROUND FLOOR , ELITE MART , NOIDA SECTOR 77 , NOIDA - 201304 </td>
+          <td>7947314042 </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+    <script>
+
+      var map = L.map('map').setView([51.505, -0.09], 13);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+      }).addTo(map);
+
+      map.setView([28.596816363225837, 77.41728536824282], 10);
+
+      L.marker([28.596816363225837, 77.41728536824282]).addTo(map);
+      L.marker([28.530692743427274, 77.20642273250235]).addTo(map);
+      L.marker([28.63595309616952, 77.06569392177923]).addTo(map);
+
+    </script>
+
+</body>
+
+</html>
